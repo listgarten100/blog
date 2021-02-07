@@ -25,5 +25,14 @@
     "gulp-uglify": "^3.0.2",
     "postcss": "^8.2.3",
     "sort-css-media-queries": "^1.5.2"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/listgarten100/blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/listgarten100/blog/issues"
+  },
+  "homepage": "https://github.com/listgarten100/blog#readme"
 }

@@ -1,0 +1,67 @@
+.header{
+  grid-area: header;
+
+
+
+}
+
+.menu{
+  position: relative;
+
+  &__list{
+    display: grid;
+    // grid-template-rows: ;
+    grid-template-columns: repeat(5,auto);
+    grid-gap: 40px;
+  }
+
+  &__item{
+    position: relative;
+  }
+
+  &__link{
+    font-size: 16px;
+    font-family: $karla;
+    color: $text-white;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    &::before{
+      content: '';
+      display: inline-block;
+ 
+      width: 10px;
+      height: 10px;
+      margin-right: 6px;
+      border-radius: 50%;
+      background-color: $color-point;
+    }
+  }
+}
+
+
+.form{
+  
+  &__list{
+    display: grid;
+    grid-template-columns: 680px 40px;
+    grid-template-rows: 40px;
+  }
+
+  &__input{
+    border: 1px solid #000;
+    border-right: none;
+    font-family: $karla;
+    font-size: 16px;
+    padding-left: 25px;
+
+  }
+
+  &__btn{
+    border: 1px solid #000;
+    border-left: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+}
