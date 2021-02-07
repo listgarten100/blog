@@ -1,3 +1,36 @@
-.slider{
+.slider {
   grid-area: slider;
+
+  &__inner {
+    position: relative;
+  }
+
+  &__controls-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  &__controls-left, &__controls-right{
+    position: absolute;
+    top: 0;
+    
+    bottom: 0;
+    height: 100px;
+    margin: auto 0;
+
+    opacity: 0.5;
+    transition: all 0.3s ease-out;
+
+    &:hover{
+      transform: scale(1.2);
+      transition: all 0.3s ease-out;
+    }
+  }
+  &__controls-left {
+    left: 4%; 
+  }
+
+  &__controls-right {
+    right: 4%;
+  }
 }
