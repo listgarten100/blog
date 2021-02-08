@@ -796,16 +796,27 @@
   
   .flickr{
  
-    &__list{
-      grid-template-columns: 1fr;
-      grid-gap: 10px;
-      justify-items: center;
-    }
+    // &__list{
+    //   grid-template-columns: 1fr;
+    //   grid-gap: 10px;
+    //   justify-items: center;
+    // }
 
+    // &__item{
+    //   width: 50%;
+    //   height: auto;
+    //   &:nth-child(n+6):nth-child(n) {
+    //     display: none;
+    //   }
+    // }
+    &__list{
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    }
+  
     &__item{
-      width: 50%;
-      height: auto;
-      &:nth-child(n+6):nth-child(n) {
+  
+      &:nth-child(odd){
         display: none;
       }
     }
