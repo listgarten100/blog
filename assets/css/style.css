@@ -229,6 +229,10 @@ body {
   grid-area: header;
 }
 
+.header__inner {
+  position: relative;
+}
+
 .burger {
   display: none;
 }
@@ -823,7 +827,7 @@ body {
   position: relative;
   display: grid;
   padding-top: 50px;
-  border-top: 4px solid red;
+  border-top: 4px solid #d22673;
   grid-gap: 20px;
   grid-template-rows: 2fr 0.8fr 1fr;
   justify-items: center;
@@ -1122,6 +1126,7 @@ body {
 .footer__copywrites {
   -ms-flex-item-align: end;
       align-self: end;
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   font-family: "Karla", sans-serif;
@@ -1447,7 +1452,9 @@ body {
   }
   .burger {
     position: absolute;
-    right: 12%;
+    right: 6%;
+    top: 30%;
+    display: block;
     width: 30px;
     height: 20px;
   }
@@ -1492,13 +1499,34 @@ body {
     display: none;
   }
   .menu {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    z-index: 2;
     display: none;
   }
   .menu__list {
-    grid-gap: 25px;
+    padding: 30px 18px 30px 8px;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    background-color: #d22673;
+  }
+  .menu__item {
+    margin: 0;
+    width: 100%;
+    display: grid;
+    justify-items: center;
   }
   .menu__link {
-    font-size: 14px;
+    width: 100%;
+    font-size: 18px;
+  }
+  .menu.active {
+    display: block;
+  }
+  .form {
+    -ms-flex-item-align: end;
+        align-self: end;
   }
   .form__list {
     grid-template-columns: 160px 40px;
@@ -1599,6 +1627,15 @@ body {
   }
   .articles-sm .date-articles {
     left: 2%;
+    width: 65px;
+    height: 65px;
+  }
+  .articles-sm .date-articles__day {
+    font-size: 18px;
+    padding-top: 0;
+  }
+  .articles-sm .date-articles__month {
+    font-size: 10px;
   }
   .advertisement__block-text {
     font-size: 22px;
@@ -1688,6 +1725,10 @@ body {
   .flickr__list {
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+  }
+  .flickr__item {
+    width: auto;
+    height: auto;
   }
   .flickr__item:nth-child(odd) {
     display: none;

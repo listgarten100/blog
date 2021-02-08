@@ -38,7 +38,7 @@
 
     padding-top: 50px;
 
-    border-top: 4px solid red;
+    border-top: 4px solid $color-point;
 
     grid-gap: 20px;
     grid-template-rows: 2fr 0.8fr 1fr;
@@ -815,7 +815,8 @@
     }
   
     &__item{
-  
+      width: auto;
+      height: auto;
       &:nth-child(odd){
         display: none;
       }

@@ -659,6 +659,7 @@
    }
 
    .articles-sm .date-articles{
+    
      left: 2%;
    }
   .advertisement{
@@ -798,6 +799,19 @@
 
    .articles-sm .date-articles{
      left: 2%;
+     width: 65px;
+     height: 65px;
+
+     
+     &__day{
+      font-size: 18px;
+      padding-top: 0;
+    }
+
+    &__month{
+     font-size: 10px;
+
+   }
    }
   .advertisement{
 
