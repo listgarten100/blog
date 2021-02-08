@@ -34,3 +34,33 @@
     right: 4%;
   }
 }
+
+
+
+@media (min-width: 800px) and (max-width: 1169px) {
+  .slider{
+    
+    &__controls-img{
+      width: 75px;
+    }
+  }
+
+}
+@media (min-width: 600px) and (max-width: 799px) {
+  .slider{
+    
+    &__controls-img{
+      width: 50px;
+    }
+  }
+}
+
+
+@media (max-width: 599px) {
+  .slider{
+    // display: none;
+    &__controls-img{
+      width: 50px;
+    }
+  }
+}
