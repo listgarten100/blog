@@ -539,6 +539,7 @@
    &__title{
      width: 90%;
      grid-template-columns: 12px 2.5fr 2fr;
+     grid-gap: 16px;
     
    }
    
@@ -671,9 +672,150 @@
  
 }
 
+@media (min-width: 450px) and (max-width: 599px) {
+  .main{
+    // grid-area: none;
+    // display: none;
+    grid-gap: 80px;
+  }
 
+  .profile--sm{
+    display: block;
+    
+  }
+  
+  .categories--sm{
+    display: block;
+  }
+  .articles{
 
-@media (max-width: 599px) {
+    &__item{
+      grid-template-rows: auto 40px 1fr 120px;
+    }
+
+    &__img{
+      height: auto;
+    }
+
+    &__title{
+      width: 90%;
+      height: 115px;
+      top: -82px;
+      grid-gap: 12px;
+      grid-template-columns: 12px 1fr 1fr;
+      grid-template-rows: auto auto;
+     
+    }
+    
+    &__title-tags{
+      width: 80%;
+      grid-template-columns: repeat(2, 90px);
+      grid-template-rows: 20px 20px;
+      grid-gap: 5px;
+      font-size: 10px;
+    }
+
+    
+ 
+    &__title-headline{
+      font-size: 16px;
+      margin-left: 5px;
+    }
+
+    &__links{
+      // grid-template-columns: 1fr 1fr;
+      justify-items:center;
+    }
+ 
+    
+    }
+
+    .social-links{
+      justify-self: center;
+    }
+
+    .date-articles{
+      // display: none;
+      width: 60px;
+      height: 60px;
+ 
+ 
+      &__day{
+        font-size: 14px;
+        padding-top: 0;
+      }
+ 
+      &__month{
+       font-size: 10px;
+ 
+     }
+    }
+    
+   
+   
+   .btn{
+    align-self: center;
+    justify-self:center;
+   }
+   .btn-more{
+     width: 100px;
+    font-size: 12px;
+ 
+    //  display: none;
+
+    &::before{
+      margin-right: 10px;
+    }
+   }
+
+   .articles-sm{
+
+    &__inner{
+      grid-template-columns: 1fr;
+    }
+    &__item{
+      grid-template-rows: auto 25px 1fr 50px;
+    }
+
+    &__item-title{
+      font-size: 18px;
+    }
+
+    &__item-img{
+      width: 100%;
+      height: auto;
+    }
+   }
+
+   .articles-sm .date-articles{
+     left: 2%;
+     width: 65px;
+     height: 65px;
+
+     
+     &__day{
+      font-size: 18px;
+      padding-top: 0;
+    }
+
+    &__month{
+     font-size: 10px;
+
+   }
+   }
+  .advertisement{
+
+    &__block-text{
+      font-size: 22px;
+    }
+  } 
+
+  .page-numbers{
+    // display: none;
+  }
+}
+
+@media (max-width: 449px) {
   .main{
     // grid-area: none;
     // display: none;
