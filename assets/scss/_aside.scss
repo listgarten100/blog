@@ -466,12 +466,36 @@
 }
 
 .social-profile{
-  // padding: 12px;
 
-  &__text{
-    font-size: 18px;
+  padding: 20px;
+  // width: 60%;
+  display: grid;
+  justify-items:center;
+  
+    &__text{
+    font-size: 14px;
+    width: 68px;
   }
 }
+
+.social-links--profile{
+  grid-template-columns: 1fr 1fr;
+    // grid-template-columns: 30px 30px;
+    justify-items: center;
+    grid-gap: 10px;
+
+  
+}
+
+
+.social__item{
+
+  &:nth-child(n+5):nth-child(n) {
+    display: none;
+  }
+ }
+
+
 
 .flickr{
 
