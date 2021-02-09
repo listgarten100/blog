@@ -432,7 +432,7 @@
   }
 
 .profile{
-
+  
   &__inner{
     grid-template-rows: 1fr 0.6fr 0.6fr;
   }
@@ -451,7 +451,7 @@
 }
 
 .social{
-  padding: 18px;
+  padding: 12px;
 
   &__text{
     font-size: 18px;
@@ -716,14 +716,15 @@
   
   .social{
 
-    padding: 20px;
+    padding: 30px;
     // width: 60%;
     display: grid;
     justify-items:center;
     
       &__text{
-      font-size: 14px;
-      width: 60px;
+      font-size: 18px;
+      width: 80px;
+      top: -16px;
     }
   }
 
