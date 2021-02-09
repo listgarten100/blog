@@ -1371,8 +1371,7 @@ body {
     grid-gap: 10px;
   }
   .flickr__item {
-    width: auto;
-    height: auto;
+    width: 200px;
   }
   .flickr__item:nth-child(odd) {
     display: none;
@@ -1947,8 +1946,7 @@ body {
     grid-gap: 10px;
   }
   .flickr__item {
-    width: auto;
-    height: auto;
+    width: 140px;
   }
   .flickr__item:nth-child(odd) {
     display: none;

@@ -869,8 +869,8 @@
     }
   
     &__item{
-      width: auto;
-      height: auto;
+      width: 200px;
+      // // height: 120px;
       &:nth-child(odd){
         display: none;
       }
@@ -1059,8 +1059,8 @@
     }
   
     &__item{
-      width: auto;
-      height: auto;
+      width: 140px;
+      // height: 120px;
       &:nth-child(odd){
         display: none;
       }
