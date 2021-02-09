@@ -15,8 +15,6 @@ body {
 
   display: grid;
   overflow: hidden;
-  // margin: 0 auto;
-  // min-height: 100%;
 
   background-color: #fafafa;
 
@@ -49,7 +47,6 @@ body {
   padding: 60px;
 
   grid-template-columns: 1fr;
-  // grid-template-rows: repeat(3, auto);
   grid-template-rows: 2.5fr 1.5fr 0.5fr;
   justify-items: center;
 }
@@ -65,7 +62,6 @@ body {
     grid-gap: 20px;
     grid-template-areas: "main  aside";
     grid-template-columns: 3fr 1fr;
-    
   }
 }
 
@@ -77,35 +73,32 @@ body {
   }
 
   .content {
- 
     &__inner {
-      grid-gap: 40px;
       width: 100%;
+
+      grid-gap: 40px;
       grid-template-areas: "main aside";
       grid-template-columns: 4fr 1fr;
-      
     }
   }
-
 }
 @media (min-width: 600px) and (max-width: 799px) {
   .wrapper {
     width: 96%;
   }
 
-  
-  
+
+
 
   .content {
- 
     &__inner {
-      grid-gap: 40px;
       width: 100%;
+
+      grid-gap: 40px;
       grid-template-areas: "main aside";
       grid-template-columns: 3fr 1fr;
-      
     }
-}
+  }
 }
 
 
@@ -115,27 +108,13 @@ body {
   }
 
   .content {
- 
     &__inner {
-      grid-gap: 70px;
       width: 100%;
-      grid-template-areas: 'main' 'aside';
+
+      grid-gap: 70px;
+      grid-template-areas: "main" "aside";
       grid-template-columns: 1fr;
       grid-template-rows: auto;
-      
     }
+  }
 }
-}
-
-
-// @media (min-width: 600px) and (max-width: 767px) {
-//   .layout {
-//     width: 98%;
-//   }
-// }
-
-// @media (max-width: 599px) {
-//   .layout {
-//     width: 98%;
-//   }
-// }

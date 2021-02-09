@@ -1,7 +1,8 @@
 .footer {
-  display: block;
   position: relative;
-  // display: none;
+
+  display: block;
+
   grid-area: footer;
 
 
@@ -13,8 +14,8 @@
 
   &__copywrites {
     align-self: end;
-    text-align: center;
 
+    text-align: center;
     text-transform: uppercase;
 
     color: $text-white;
@@ -26,15 +27,13 @@
 
 
 @media (max-width: 599px) {
-.footer{
+  .footer {
+    &__inner {
+      grid-template-rows: 6fr 1fr;
+    }
 
-  &__inner {
-   
-    grid-template-rows: 6fr 1fr;
+    &__copywrites {
+      font-size: 12px;
+    }
   }
-
-  &__copywrites {
-       font-size: 12px;
-  }
-}
 }
