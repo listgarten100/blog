@@ -1,4 +1,6 @@
 .footer {
+  display: block;
+  position: relative;
   // display: none;
   grid-area: footer;
 
@@ -23,11 +25,16 @@
 }
 
 
-// @media (max-width: 599px) {
-// .footer{
+@media (max-width: 599px) {
+.footer{
 
-//   &__copywrites{
-//     text-align: center;
-//   }
-// }
-// }
+  &__inner {
+   
+    grid-template-rows: 6fr 1fr;
+  }
+
+  &__copywrites {
+       font-size: 12px;
+  }
+}
+}
